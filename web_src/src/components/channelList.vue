@@ -609,10 +609,7 @@ export default {
         } else {
           row.customLongitude = parseFloat(segements[0]);
           row.custom_latitude = parseFloat(segements[1]);
-          if (!(row.longitude && row.latitude)) {
-            this.$message.warning("位置信息格式有误，例：117.234,36.378");
-            return;
-          }
+
         }
       } else {
         delete row.longitude;
